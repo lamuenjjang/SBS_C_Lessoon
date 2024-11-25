@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SBS_C_Lessoon", "SBS_C_Less
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class1th (Compile)", "Class1th (Compile)\Class1th (Compile).vcxproj", "{701D63D5-AB2D-4DDD-BF9F-EDA2D9243A26}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class2th (Variable)", "Class2th (Variable)\Class2th (Variable).vcxproj", "{9FB6F6D8-5E29-4200-99B3-D53764183CDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{701D63D5-AB2D-4DDD-BF9F-EDA2D9243A26}.Release|x64.Build.0 = Release|x64
 		{701D63D5-AB2D-4DDD-BF9F-EDA2D9243A26}.Release|x86.ActiveCfg = Release|Win32
 		{701D63D5-AB2D-4DDD-BF9F-EDA2D9243A26}.Release|x86.Build.0 = Release|Win32
+		{9FB6F6D8-5E29-4200-99B3-D53764183CDE}.Debug|x64.ActiveCfg = Debug|x64
+		{9FB6F6D8-5E29-4200-99B3-D53764183CDE}.Debug|x64.Build.0 = Debug|x64
+		{9FB6F6D8-5E29-4200-99B3-D53764183CDE}.Debug|x86.ActiveCfg = Debug|Win32
+		{9FB6F6D8-5E29-4200-99B3-D53764183CDE}.Debug|x86.Build.0 = Debug|Win32
+		{9FB6F6D8-5E29-4200-99B3-D53764183CDE}.Release|x64.ActiveCfg = Release|x64
+		{9FB6F6D8-5E29-4200-99B3-D53764183CDE}.Release|x64.Build.0 = Release|x64
+		{9FB6F6D8-5E29-4200-99B3-D53764183CDE}.Release|x86.ActiveCfg = Release|Win32
+		{9FB6F6D8-5E29-4200-99B3-D53764183CDE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
