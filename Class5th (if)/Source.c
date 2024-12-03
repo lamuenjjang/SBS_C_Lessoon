@@ -2,7 +2,7 @@
 
 #pragma region 전처리기
 // 프로그램이 컴파일 되기 이전에 프로그램에 대한
-// 사전 처리하는 과정입니다.
+// 사전 처리하는 과정 입니다.
 
 // 전처리기는 컴파일러가 아닌 선행 처리기에 의해서
 // 처리되는 문장이기 때문에 명령문 끝에	";"를 사용하지 않습니다.
@@ -111,21 +111,78 @@ int main()
 
 	int value = 0;
 
-	if (value > 0) {
-		printf("value의 값은 양수입니다.\n");
-	}
-	else if (value < 0)
-	{
-		printf("value의 값은 음수입니다.\n");
-	}
-	else
-	{
-		printf("value의 값은 음수도 아니고 양수도 아닙니다.\n");
-	}
+	// if (value > 0) {
+	// 	printf("value의 값은 양수입니다.\n");
+	// }
+	// else if (value < 0)
+	// {
+	// 	printf("value의 값은 음수입니다.\n");
+	// }
+	// else
+	// {
+	// 	printf("value의 값은 음수도 아니고 양수도 아닙니다.\n");
+	// }
 
 	// if문에 연결된 모든 조건문의 조건이 맞을때
 	// 가장 위에 있는 조건문만 실행됩니다.
 #pragma endregion
+
+#pragma region switch문
+	// 어떤 결과에 따라 그 결과부터 실행되는 명령문입니다.
+
+	int scene = 1;
+
+	switch (scene)
+	{
+		// switch 문은 해당 조건이 완료되었을때, break
+		// 문이 없으면 나머지 밑에있는 case문까지 계속
+		// 실행시키다가 종료합니다.
+	case 1: printf("마을");
+		break;
+	case 2: printf("던전");
+		break;
+	default: printf("이동 불가 지역");
+		break;
+	}
+
+	// switch문의 경우 조건에 해당하는 값에 따라 조건의
+	// 위치로 이동합니다.
+#pragma endregion
+
+#pragma region 논리연산자
+
+#pragma region AND 연산자
+	int level = 99;
+	int exp = 10000;
+
+	if (level >= 99 && exp >= 5000)
+	{
+		printf("전직을 할 수 있습니다.\n");
+	}
+#pragma endregion
+
+#pragma region OR 연산자
+	int Gold = 100;
+	int Silver = 500;
+
+	if (Gold >= 100 || Silver >= 1000)
+	{
+		printf("아이템을 구매할 수 있습니다.\n");
+	}
+#pragma endregion
+
+#pragma region NOT연산자
+	int Quest_ClearState = 0;
+
+	if (!Quest_ClearState) {
+		printf("Quest Clear");
+	}
+
+#pragma endregion
+
+
+#pragma endregion
+
 
 #pragma endregion
 
