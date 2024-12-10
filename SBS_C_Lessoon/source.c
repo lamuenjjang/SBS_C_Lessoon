@@ -1,10 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 struct Vector2
 {
 	int x;
 	int y;
+};
+
+struct Node {
+	int data;
+	struct Node* next;
 };
 
 /*struct GameObject
@@ -60,24 +66,58 @@ int main()
 
 	// printf("10의 제곱 : %lf\n", pow(10, 2));
 
-	struct Vector2 Character = { 0,0 };
-	struct Vector2 Monster = { 2,2 };
-
-	double distance = sqrt(pow(Character.x - Monster.x, 2) + 
-		pow(Character.y - Monster.y, 2));
-
-	printf("distance의 값 : %lf  >>>>  ", distance);
-
-	if (distance <= 3.0f) {
-		printf("공격 상태");
-	}
-	else
-	{
-		printf("이동 상태");
-	}
+	// struct Vector2 Character = { 0,0 };
+	// struct Vector2 Monster = { 2,2 };
+	// 
+	// double distance = sqrt(pow(Character.x - Monster.x, 2) + 
+	// 	pow(Character.y - Monster.y, 2));
+	// 
+	// printf("distance의 값 : %lf  >>>>  ", distance);
+	// 
+	// if (distance <= 3.0f) {
+	// 	printf("공격 상태");
+	// }
+	// else
+	// {
+	// 	printf("이동 상태");
+	// }
 
 
 #pragma endregion
+
+#pragma region 자기 참조 구조체
+	// 구조체 내부에 자기 자신의 자료형을 멤버 변수로
+	// 가지고 있는 구조체입니다.
+
+	struct Node * node1 = malloc(sizeof(struct Node));
+	struct Node * node2 = malloc(sizeof(struct Node));
+	struct Node * node3 = malloc(sizeof(struct Node));
+
+	node1->data = 10;
+	node2->data = 20;
+	node3->data = 30;
+
+	node1->next = &node2;
+	node2->next = &node3;
+	node3->next = NULL;
+
+	struct Node* CurrentNode = node1;
+
+	for (int i = 0; i < 3; i++)
+	{
+		printf("node%d의 값 : %d",i, CurrentNode->data);
+		CurrentNode = CurrentNode->next;
+	}
+
+
+
+
+
+
+
+
+#pragma endregion
+
 
 	return 0;
 }
